@@ -46,7 +46,7 @@ Fx.Text = new Class({
         var len = Math.max(from.length, to.length) - 1;
         var chars = Math.round(len * delta);
         for (i = 0; i <= chars; i++) {
-            if (to.length < from.length && from.length > to.length) 
+            if (to.length < from.length) 
                 from = from.substr(0, from.length - i);
             if (i < to.length) {
                 var chr = to.charAt(i);
