@@ -10,7 +10,7 @@ It requires Mootools and is tested with v1.2.4.
 Demo
 ---
 
-You can see a simple demo in [this shell](http://mooshell.net/xxx/).
+You can see a simple demo in [this shell](http://jsfiddle.net/yVMCW/).
 
 
 How to Use
