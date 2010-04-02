@@ -43,27 +43,15 @@ Fx.Text = new Class({
     },
     
     compute: function(from, to, delta){
-        var len = Math.max(from.length, to.length) - 1;
-        var chars = Math.round(len * delta);
-        for (i = 0; i <= chars; i++) {
-            if (to.length < from.length) 
-                from = from.substr(0, from.length - i);
-            if (i < to.length) {
-                var chr = to.charAt(i);
-                if (i >= from.length) 
-                    from += chr;
-                else 
-                    from = from.setCharAt(i, chr);
-            }
+        var computed = from.split('');
+        var stepL = Math.round(to.length * delta);
+        var stepR = Math.round((from.length - to.length) * delta);
+        for (i = 0; i < stepL; i++) {
+            computed[i] = to[i];
         }
-        return from;
-    }
-});
-
-String.implement({
-    setCharAt: function(index, chr){
-        if (index >= this.length) 
-            return this;
-        return this.substr(0, index) + chr + this.substr(index + 1);
+        for (i = from.length; i > from.length - 1 - stepR; i--) {
+            computed[i] = null;
+        }
+        return computed.join('');
     }
 });
