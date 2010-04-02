@@ -11,7 +11,7 @@ copyright: Copyright (c) 2010 Dipl.-Ing. (FH) André Fiedler <kontakt@visualdrug
  
 license: MIT-style license.
 
-version: 1.1
+version: 1.2
  
 requires: [Fx]
  
@@ -43,15 +43,8 @@ Fx.Text = new Class({
     },
     
     compute: function(from, to, delta){
-        var computed = from.split('');
-        var stepL = Math.round(to.length * delta);
-        var stepR = Math.round((from.length - to.length) * delta);
-        for (i = 0; i < stepL; i++) {
-            computed[i] = to[i];
-        }
-        for (i = from.length - 1; i > from.length - 1 - stepR; i--) {
-            computed[i] = null;
-        }
-        return computed.join('');
+        var l = Math.round(to.length * delta);
+        var r = Math.round((from.length - to.length) * delta);
+		return to.substr(0, l) + from.substr(l, from.length - l - r);
     }
 });
