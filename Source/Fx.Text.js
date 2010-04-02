@@ -49,7 +49,7 @@ Fx.Text = new Class({
         for (i = 0; i < stepL; i++) {
             computed[i] = to[i];
         }
-        for (i = from.length; i > from.length - 1 - stepR; i--) {
+        for (i = from.length - 1; i > from.length - 1 - stepR; i--) {
             computed[i] = null;
         }
         return computed.join('');
