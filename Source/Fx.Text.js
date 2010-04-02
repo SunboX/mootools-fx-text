@@ -45,6 +45,6 @@ Fx.Text = new Class({
     compute: function(from, to, delta){
         var l = Math.round(to.length * delta);
         var r = Math.round((from.length - to.length) * delta);
-		return to.substr(0, l) + from.substr(l, from.length - l - r);
+        return to.substr(0, l) + from.substr(l, from.length - l - r);
     }
 });
