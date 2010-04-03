@@ -23,6 +23,10 @@ How to Use
     });
     
     fx.start('Hello, World!');
+    
+    // or just do:
+    
+    $('myElement').retype('Hello, World!');
 
 
 Options

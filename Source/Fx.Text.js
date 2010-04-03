@@ -11,9 +11,9 @@ copyright: Copyright (c) 2010 Dipl.-Ing. (FH) André Fiedler <kontakt@visualdrug
  
 license: MIT-style license.
 
-version: 1.2
+version: 1.2.1
  
-requires: [Fx]
+requires: Fx
  
 provides: Fx.Text
  
@@ -37,7 +37,7 @@ Fx.Text = new Class({
     step: function(){
         if (!this.to) {
             this.to = this.from;
-            this.from = this.element.get('text');
+            this.from = this.element.get('text', '');
         }
         return this.parent();
     },
