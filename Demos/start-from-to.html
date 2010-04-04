@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<!--
+		Mootools Fx.Text Test
+	  
+		Copyright:
+		  Copyright (c) 2010 Dipl.-Ing. (FH) André Fiedler <kontakt@visualdrugs.net>
+		  
+		License:
+		  MIT-style license
+		  
+		Version
+		  1.0
+	-->
+	
+    <title>Mootools Fx.Text Test</title>
+	
+	<!-- Scripts -->
+	
+	<script src="mootools-core.js" 	type="text/javascript"></script>
+	<script src="../Source/Fx.Text.js" 	type="text/javascript"></script>
+	
+	<script type="text/javascript">
+		
+    window.addEvent('domready', function(){
+    
+        $$('a').each(function(el){
+        
+            el.store('fx:text', new Fx.Text(el, {
+                duration: 'short'
+            }));
+            
+            el.addEvent('mouseenter', function(e){
+                this.retrieve('fx:text').start('', this.get('text'));
+            });
+        });
+    });
+		
+	</script>
+	
+	<style type="text/css">
+				
+		body { font-family: Arial, Helvetica, sans-serif; font-size: 0.8em; }
+		ul { margin: 0 0 0 5px; border-top: #666 1px solid; padding: 0; margin: 0; width: 200px; }
+		ul li { margin: 5px; border-bottom: #666 1px solid; padding: 0; margin: 0; background: #efefef; }
+		ul li a { display: block; color: #333; text-decoration: none; padding: 5px 0 5px 10px; width: 200px; line-height: 17px; height: 17px; }
+
+	</style>
+	
+</head>
+<body>
+	<ul>
+	    <li><a href="#">Home</a></li>
+	    <li><a href="#">Where We Are</a></li>
+	    <li><a href="#">Account</a></li>
+	    <li><a href="#">Site Map</a></li>
+	    <li><a href="#">Security Policy</a></li>
+	    <li><a href="#">Contact Us</a></li>
+	</ul>
+</body>
+</html>

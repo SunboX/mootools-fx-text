@@ -10,7 +10,7 @@ It requires Mootools and is tested with v1.2.4.
 Demo
 ---
 
-You can see a simple demo in [this shell](http://jsfiddle.net/yVMCW/).
+You can see two simple demos [here](http://jsfiddle.net/yVMCW/) and [here](http://jsfiddle.net/VEXAg/).
 
 
 How to Use
