@@ -1,7 +1,7 @@
 Mootools Fx.Text
 ===
 
-Effect to animated replace the text of an element. Useful for textscrollers/newsscrollers or so.
+Effect to animated replace the text of an element. Useful for textscroller, newsscroller, changing image caption, animated links and so on.
 It requires Mootools and is tested with v1.2.4.
 
 ![Screenshot](http://github.com/SunboX/mootools-fx-text/raw/master/mootools-fx-text.png)
