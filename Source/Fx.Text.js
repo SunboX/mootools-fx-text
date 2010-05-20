@@ -13,7 +13,7 @@ license: MIT-style license.
 
 version: 1.2.1
  
-requires: Fx
+requires: Core/1.2.4: Fx
  
 provides: Fx.Text
  
