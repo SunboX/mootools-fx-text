@@ -14,6 +14,7 @@ license: MIT-style license.
 version: 1.2.1
  
 requires: 
+  - Core/Element
   - Core/Fx
  
 provides: Fx.Text
