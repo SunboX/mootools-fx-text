@@ -13,7 +13,8 @@ license: MIT-style license.
 
 version: 1.0
  
-requires: Fx.Text
+requires:
+  - Fx.Text
  
 provides: Element.retype
  

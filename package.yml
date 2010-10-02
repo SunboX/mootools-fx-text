@@ -1,6 +1,27 @@
 name: Fx.Text
-author: SunboX
-category: Effects
-tags: [Effects, text, animation, element, behavioral, morph, scroll, replace]
-demo: http://jsfiddle.net/yVMCW/
+
 current: 1.2.1
+
+web: "[mootools.net/forge/p/fx_text](http://mootools.net/forge/p/fx_text)"
+
+description: "Effect to animated replace the text of an element. Useful for textscroller, newsscroller, changing image caption, animated links and so on."
+
+authors: "[André Fiedler](http://visualdrugs.net)"
+
+license: "MIT License"
+
+copyright: "Copyright (c) 2010, Dipl.-Ing. (FH) André Fiedler <kontakt at visualdrugs dot net>, based on code by eskimoblood (mootools users group)"
+
+sources:
+  - "Source/Fx.Text.js"
+  - "Source/Element.retype.js"
+  
+# Values for MooTools forge
+  
+author: SunboX
+
+demo: http://jsfiddle.net/yVMCW/
+
+category: Effects
+
+tags: [Effects, text, animation, element, behavioral, morph, scroll, replace]
