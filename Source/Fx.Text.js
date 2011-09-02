@@ -39,7 +39,7 @@ Fx.Text = new Class({
 	step: function(){
 		if (!this.to){
 			this.to = this.from;
-			this.from = this.element.get('text', '');
+			this.from = this.element.get('text') || '';
 		}
 		return this.parent();
 	},
