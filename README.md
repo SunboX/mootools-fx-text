@@ -15,19 +15,18 @@ You can see two simple demos [here](http://jsfiddle.net/yVMCW/) and [here](http:
 
 How to Use
 ---
+```javascript
+var fx = new Fx.Text('myElement', {
+	duration: 'long',
+	transition: Fx.Transitions.Bounce.easeOut
+});
 
-	#JS
-	var fx = new Fx.Text('myElement', {
-        duration: 'long',
-        transition: Fx.Transitions.Bounce.easeOut
-    });
-    
-    fx.start('Hello, World!');
-    
-    // or just do:
-    
-    $('myElement').retype('Hello, World!');
+fx.start('Hello, World!');
 
+// or just do:
+
+$('myElement').retype('Hello, World!');
+```
 
 Options
 ---
