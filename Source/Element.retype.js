@@ -7,11 +7,11 @@ description: Effect to animated replace the text of an element.
 
 authors: Dipl.-Ing. (FH) André Fiedler <kontakt@visualdrugs.net>
 
-copyright: Copyright (c) 2010 Dipl.-Ing. (FH) André Fiedler <kontakt@visualdrugs.net>
+copyright: Copyright (c) 2010 - 2012, Dipl.-Ing. (FH) André Fiedler <kontakt@visualdrugs.net>
  
 license: MIT-style license.
 
-version: 1.0
+version: 1.1
  
 requires:
   - Fx.Text
@@ -27,7 +27,7 @@ Element.Properties.retype = {
 		var retype = this.retrieve('retype');
 		if (retype)
 			retype.cancel();
-		return this.eliminate('retype').store('retype:options', $extend({
+		return this.eliminate('retype').store('retype:options', Object.append({
 			link: 'cancel'
 		}, options));
 	},

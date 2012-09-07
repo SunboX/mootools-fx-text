@@ -7,11 +7,11 @@ description: Effect to animated replace the text of an element.
 
 authors: Dipl.-Ing. (FH) André Fiedler <kontakt@visualdrugs.net>
 
-copyright: Copyright (c) 2010 Dipl.-Ing. (FH) André Fiedler <kontakt@visualdrugs.net>
+copyright: Copyright (c) 2010 - 2012, Dipl.-Ing. (FH) André Fiedler <kontakt@visualdrugs.net>
  
 license: MIT-style license.
 
-version: 1.2.1
+version: 1.3
  
 requires: 
   - Core/Element
@@ -36,12 +36,12 @@ Fx.Text = new Class({
 		return this;
 	},
 	
-	step: function(){
-		if (!this.to){
-			this.to = this.from;
-			this.from = this.element.get('text') || '';
+	start: function(from, to){
+		if (!to){
+			to = from;
+			from = this.element.get('text') || '';
 		}
-		return this.parent();
+		return this.parent(from, to);
 	},
 	
 	compute: function(from, to, delta){
